@@ -1,0 +1,92 @@
+:root{
+  --main-color:#677CFF;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/WorkSans-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 1 999;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.4;
+	font-size: 1.1rem;
+	color: #222;
+	background-color: #fcfcfc;
+}
+
+img{
+	width: 100%;
+}
+
+.quote{
+	margin: 4rem 0;
+}
+blockquote{
+	font-size: 1.4rem;
+	font-weight: 400;
+	position: relative;
+	margin: 0;
+	padding: 0 3em;
+  color:var(--main-color);
+}
+blockquote::before{
+	content: "“";
+	position: absolute;
+	font-size: 3em;
+	left: 0%;
+	top:-0.5em;
+}
+blockquote::after{
+	content: "”";
+	position: absolute;
+	bottom: -1em;
+	right: 0;
+	font-size: 3em;
+}
+.quote footer{
+	margin-top: 3rem;
+	font-size: 0.8rem;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.quote footer > *{
+	max-width: 62ch;
+}
+
+a {
+  font-weight: 550;
+	color:var(--main-color);
+	text-decoration: none;
+}
+
+h1{
+  font-size: 3rem;
+  color:var(--main-color);
+}
+
+.img-source{
+  position: relative;
+}
+
+.img-source .source{
+  font-size: 0.8rem;
+  position: absolute;
+  top:0;
+  left:0;
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+}
